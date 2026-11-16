@@ -1,5 +1,6 @@
 import java.util.Random;
 
+
 public class Anao extends Combatente {
 
     public Anao(String nome, int nivel) {
@@ -9,6 +10,7 @@ public class Anao extends Combatente {
 
     @Override
     public void atacar(Combatente alvo) {
+        
         Random r = new Random();
 
         int dano = this.ataque + r.nextInt(10);
