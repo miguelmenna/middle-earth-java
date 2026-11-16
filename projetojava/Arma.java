@@ -1,6 +1,6 @@
 public abstract class Arma {
     protected String nome;
-    protected int danoBase; // dano adicional fornecido pela arma
+    protected int danoBase;
 
     public Arma(String nome, int danoBase) {
         this.nome = nome;
@@ -15,11 +15,11 @@ public abstract class Arma {
         return danoBase;
     }
 
-    // Cada arma terá um efeito próprio (polimorfismo)
     public abstract int calcularDanoExtra();
 
     @Override
     public String toString() {
         return nome + " (+" + danoBase + " dano)";
     }
+    
 }
